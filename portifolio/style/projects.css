@@ -1,0 +1,53 @@
+section.projects {
+  background-color: var(--gray-200);
+  & header {
+    padding-top: 8.5rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+    & h2 {
+      font: var(--text-subtitle);
+      color: var(--red);
+    }
+    & p {
+      font: var(--text-title-md);
+      color: var(--gray-600);
+    }
+  }
+
+  & .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 9rem;
+
+
+    & .card {
+      &:hover{
+        border: 1.5px solid var(--gray-400);
+      }
+
+      width: 20.625rem;
+      background-color: var(--gray-300);
+      border-radius: .75rem;
+      padding: .75rem;
+      gap: 1.25rem;
+
+      & img {
+        width: 19.125rem;
+        border-radius: .5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      & h3 {
+        color: var(--gray-600);
+      }
+      & p {
+        color: var(--gray-500);
+        margin-bottom: 5px;
+      }
+
+    }
+  }
+
+}
